@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <title>CHD Prediction</title>
+      <style>
+        .container {
+          width: 60%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .form-horizontal{
+            width: 50%;
+            margin: 20px auto;
+
+        }
+        img{
+            width: 100px;
+        }
+        .form{
+            border: 1px solid lightgray !important;;
+        }
+        .title{
+            margin: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .result{
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .result img{
+            width: 30px;
+        }
+
+      </style>
+    </head>
+
+    <body bgcolor=#5AB4B5 >
+       <div class="container">
+
+             <div class="title">
+                 <h2>Coronary Heart Disease Prediction</h2>
+                 <img src="https://cdn-icons-png.flaticon.com/512/2167/2167018.png"/>
+             </div>
+
+             <!-- Main Input For Receiving Query to our ML -->
+             <div class="form">
+<!--                <form action="{{ url_for('predict')}}"method="post" class="form-horizontal">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="sbp">Systolic Blood Pressure (SBP)</label>-->
+<!--                        <input type="text" name="sbp" class="form-control" required="required"/>-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="tobacco">Tobacco Level</label>-->
+<!--                        <input type="text" name="tobacco" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="ldl">Low-Density Lipoprotein (LDL)</label>-->
+<!--                        <input type="text" name="ldl" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="adiposity">Adiposity</label>-->
+<!--                        <input type="text" name="adiposity" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="famhist">Family History <br/> (1 for presence, 0 for Abesence)</label>-->
+<!--                        <input type="text" name="famhist" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="typea">Type of Behavior</label>-->
+<!--                        <input type="text" name="typea" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="alchohol">Alchohol Level</label>-->
+<!--                        <input type="text" name="alchohol" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--                    <div class="form-group">-->
+<!--                        <label for="age">Age</label>-->
+<!--                        <input type="text" name="age" class="form-control" required="required" />-->
+<!--                    </div>-->
+
+<!--    &lt;!&ndash;                    <input type="text" name="sbp" placeholder="sbp" required="required" /> <br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="tobacco" placeholder="tobacco" required="required" /> <br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="ldl" placeholder="ldl" required="required" /><br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="adiposity" placeholder="adiposity" required="required" /><br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="famhist" placeholder="famhist" required="required" /><br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="typea" placeholder="typea" required="required" /><br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="alchohol" placeholder="alchohol" required="required" /><br><br>&ndash;&gt;-->
+<!--    &lt;!&ndash;                    <input type="text" name="age" placeholder="age" required="required" /><br><br><br>&ndash;&gt;-->
+
+<!--                    <button type="submit" class="btn btn-primary">Predict</button>-->
+<!--                </form>-->
+
+                 <div class="result">
+                     <img src="https://www.freeiconspng.com/thumbs/results-icon-png/results-icon-png-13.png"/>
+                     &nbsp; &nbsp;
+                     <h4>{{ result }}</h4>
+                 </div>
+
+             </div>
+
+        </div>
+
+    </body>
+</html>
